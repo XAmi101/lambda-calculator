@@ -1,0 +1,20 @@
+.container{
+    border:1px solid #000;
+    width: 25%;
+    height: 400px;
+    background: #a81e36;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.logo-container{
+    background-color:black;
+}
+
+.App {
+  text-align: center;
+  width: 345px;
+  height: 360px;
+}
