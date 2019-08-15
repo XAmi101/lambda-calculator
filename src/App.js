@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 
@@ -9,10 +9,10 @@ import "./App.css";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
-import Specials from './components/ButtonComponents/SpecialButtons/Specials'
-import Operators from './components/ButtonComponents/OperatorButtons/Operators'
-import Display from "./components/DisplayComponents/Display";
+import Numbers from './components/ButtonComponents/NumberButtons/Numbers.js';
+import Specials from './components/ButtonComponents/SpecialButtons/Specials.js';
+import Operators from './components/ButtonComponents/OperatorButtons/Operators.js';
+import Display from "./components/DisplayComponents/Display.js";
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -21,20 +21,29 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
+// const [display, setDisplay] = useState("0");
+// const addnumber = (number) => {
+//   setDisplay (display => display + number);
+//
+// };
+
   return (
     <div className="container">
       <Logo />
-      <div className="App">
-        <Display />
+      <div className = "App">
+{/*  <Display hap={1}/> is esentially {Display ({hap:1})}  but for react */}
+        <Display hap={1999}/>
+
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <div className="btns">
 
-       <Specials/>
-       <Numbers />
-       <Operators />
-       </div>
-  </div>
+        <Specials/>
+         <Numbers />
+         <Operators />
+      </div>
     </div>
+    </div>
+
   );
 }
 

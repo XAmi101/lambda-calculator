@@ -1,8 +1,10 @@
 import React from "react";
+import "../../App.css";
 
 const Display = (props) => {
-  return <div className="display">
-  {props.number}
+  console.log ("Display", props,)
+  return <div className ="display" >
+   {props.hap}
   {/* Display any props data here */}
   </div>;
 };
