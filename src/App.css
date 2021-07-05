@@ -1,0 +1,41 @@
+.container{
+    border:1px solid #000;
+    width: 25%;
+    height: 80%;
+    background: #a81e36;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.logo-container{
+    background-color:black;
+}
+
+.App {
+  text-align: center;
+  /* width: 345px;
+  height: 360px; */
+}
+
+.display {
+    color: white;
+    background: darkgrey;
+    width: 65%;
+    border-radius: 50px;
+    height: 10%;
+    margin: 10px 35px;
+    box-shadow: 0 4px black;
+
+}
+
+button {
+    color: blue;
+    height: 15%;
+    width: 15%;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px black;
+    font-size: 25px;
+}
